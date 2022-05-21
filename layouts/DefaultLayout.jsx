@@ -8,7 +8,7 @@ export default function DefaultLayout({ children }) {
      mx-auto"
     >
       <NavBar />
-      <main className="px-2 sm:px-1">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )

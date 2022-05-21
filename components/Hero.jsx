@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
     <main className="lg:relative">
@@ -9,27 +11,25 @@ export default function Hero() {
               online business
             </span>
           </h1>
+
           <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Ayúnados llenando esta encuesta y mejores junto como Universidad
           </p>
+
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
-              <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary-600 hover:bg-secondary-700 md:py-4 md:text-lg md:px-10"
-              >
-                Get started
-              </a>
+              <Link href="/survey">
+                <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary-600 hover:bg-secondary-700 md:py-4 md:text-lg md:px-10">
+                  LLenar encuesta
+                </a>
+              </Link>
             </div>
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-              <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-secondary-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
-              >
-                Live demo
-              </a>
+              <Link href="/results">
+                <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-secondary-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                  Resultados
+                </a>
+              </Link>
             </div>
           </div>
         </div>
