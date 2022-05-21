@@ -92,18 +92,18 @@ export default function NavBar() {
               </div>
               <div className="py-6 px-5 space-y-6">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                  <Link href="#">
+                  <Link href="/">
                     <a className="text-base font-medium text-gray-900 hover:text-gray-700">
                       Home
                     </a>
                   </Link>
 
-                  <Link href="#">
+                  <Link href="/survey">
                     <a className="text-base font-medium text-gray-900 hover:text-gray-700">
                       Encuestas
                     </a>
                   </Link>
-                  <Link href="#">
+                  <Link href="/results">
                     <a className="text-base font-medium text-white bg-primary-600 rounded px-4 py-2 hover:bg-primary-400">
                       Resultados
                     </a>
