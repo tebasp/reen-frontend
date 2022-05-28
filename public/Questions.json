@@ -2,28 +2,28 @@
   "questions": [
     {
       "id": 1,
-      "title": "Question 1",
+      "title": "¿Cuál de las siguientes opciones piensa que define la Responsabilidad Social?",
       "disable": false,
       "type": "LIST",
       "answers": [
         {
-          "name": "Question 1 Answer 1",
+          "name": "Situación en la que la persona considera tomar una decisión y que cualquiera tome implique afectar a una persona o aun grupo.",
           "value": 0
         },
         {
-          "name": "Question 1 Answer 2",
-          "value": 3
+          "name": "Es un término que se refiere al compromiso u obligaciones de los miembros de una determinada comunidad, sociedad, individuos o bien parte del grupo social",
+          "value": 5
         },
         {
-          "name": "Question 1 Answer 3",
-          "value": 5
+          "name": "Grupo de personas que se relacionan entre sí, de acuerdo a una determinada regla organizacional jurídica y consuetudinarias",
+          "value": 3
         }
       ]
     },
     {
       "id": 2,
-      "title": "Question 2",
-      "type": "LIST",
+      "title": "Según su criterio seleccione las imágenes que correspondan a la responsabilidad Social. Seleccione una.",
+      "type": "IMAGE",
       "disable": true,
       "answers": [
         {
@@ -42,21 +42,105 @@
     },
     {
       "id": 3,
-      "title": "Question 3",
+      "title": "¿Conoce los tipos de responasbilidad universitaria?",
       "type": "LIST",
       "disable": true,
       "answers": [
         {
-          "name": "Question 3 Answer 1",
+          "name": "Sociedad civil, organizaciones religiosas, Sociedad cultural.",
           "value": 0
         },
         {
-          "name": "Question 3 Answer 2",
+          "name": "Empresarial, Universitaria, Sociedad civil",
+          "value": 5
+        },
+        {
+          "name": "Sociedad cultural, ambiental, sociedad civil, Empresarial.",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "De los puntos nombrados a continuación, ¿Cuáles considera usted que la universidad sea responsable? Seleccione una.",
+      "type": "LIST",
+      "disable": true,
+      "answers": [
+        {
+          "name": "Ayudar la comunidad",
+          "value": 2
+        },
+        {
+          "name": "Impactos positivos ",
+          "value": 0
+        },
+        {
+          "name": "Comprometerse en la sociedad",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Según su criterio ¿Cual piensa usted que son los principios y valores para que las universidades sean totalmente responsables?",
+      "type": "LIST",
+      "disable": true,
+      "answers": [
+        {
+          "name": "Aceptación",
+          "value": 2
+        },
+        {
+          "name": "Libertad",
+          "value": 0
+        },
+        {
+          "name": "Ética",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Está usted de acuerdo que las universidades que practican responsabilidad social lo den a conocer mediante campañas de publicidad. Responda en base a su criterio.",
+      "type": "LIST",
+      "disable": true,
+      "answers": [
+        {
+          "name": "Si",
+          "value": 1
+        },
+        {
+          "name": "No",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "¿Cuál cree usted que es la situación actual de las universidades en base a la responsabilidad social? Responda en base a su criterio.",
+      "type": "LIST",
+      "disable": true,
+      "answers": [
+        {
+          "name": "Muy Buena",
+          "value": 5
+        },
+        {
+          "name": "Buena",
+          "value": 4
+        },
+        {
+          "name": "Regular",
           "value": 3
         },
         {
-          "name": "Question 3 Answer 3",
-          "value": 5
+          "name": "Mala",
+          "value": 2
+        },
+        {
+          "name": "Muy mala",
+          "value": 1
         }
       ]
     }
