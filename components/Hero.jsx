@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <main className="lg:relative">
-      <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+      <div className="mx-auto max-w-7xl w-full pt-10 pb-20 text-center lg:py-28 lg:text-left">
         <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
           <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
             <span className="block xl:inline">
@@ -14,8 +14,18 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Ayúnados llenando esta encuesta y mejores junto como Universidad
+          <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 font-light sm:text-xl md:mt-5 md:max-w-3xl">
+            En la UCACUE queremos conocer el estado de concienca de los
+            estudiantes y profesores sobre la{" "}
+            <span className="text-primary-500">Responsabilidad Social,</span>{" "}
+            por lo que hemos preparado una{" "}
+            <span className="text-primary-500">encuesta,</span> la cual nos
+            permitirá saber si somo socialmente responsables o debemos mejorar
+            en este aspecto.
+          </p>
+
+          <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 font-light md:mt-5 md:max-w-3xl">
+            Ayúdanos llenando esta encuesta y mejoremos juntos como Universidad
           </p>
 
           <div className="mt-10 sm:flex sm:justify-center lg:justify-start">

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 /* This example requires Tailwind CSS v2.0+ */
 export default function CallToAction() {
@@ -10,7 +10,7 @@ export default function CallToAction() {
           <span className="block">es un deber de todos</span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-indigo-200">
-          Ayúnados llenando esta encuesta y mejores junto como Universidad
+          Ayúdanos llenando esta encuesta y mejoremos juntos como Universidad
         </p>
         <Link href="/survey">
           <a className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto">
@@ -19,5 +19,5 @@ export default function CallToAction() {
         </Link>
       </div>
     </div>
-  )
+  );
 }
