@@ -3,6 +3,7 @@ import { Tab } from "@headlessui/react";
 import { useRouter } from "next/router";
 
 import SurveyQuestionList from "@/components/SurveyQuestions/SurveyQuestionList";
+import SurveyQuestionImage from "@/components/SurveyQuestions/SurveyQuestionImage";
 import Modal from "@/components/Modal";
 
 function classNames(...classes) {
@@ -128,8 +129,16 @@ export default function Surveys({ results, setResults }) {
                   <h2 className="text-center py-4 font-light text-lg md:text-xl">
                     {question.title}
                   </h2>
-                  {showSurveyQuestions && (
+                  {showSurveyQuestions && question.type === "LIST" && (
                     <SurveyQuestionList
+                      question={question}
+                      selected={selected}
+                      setSelected={setSelected}
+                    />
+                  )}
+
+                  {showSurveyQuestions && question.type === "IMAGE" && (
+                    <SurveyQuestionImage
                       question={question}
                       selected={selected}
                       setSelected={setSelected}

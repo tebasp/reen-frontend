@@ -27,16 +27,16 @@
       "disable": true,
       "answers": [
         {
-          "name": "Question 2 Answer 1",
+          "name": "/surveyimg-1.jpeg",
           "value": 0
         },
         {
-          "name": "Question 2 Answer 2",
-          "value": 3
+          "name": "/surveyimg-2.jpeg",
+          "value": 5
         },
         {
-          "name": "Question 2 Answer 3",
-          "value": 5
+          "name": "/surveyimg-3.jpeg",
+          "value": 2
         }
       ]
     },
