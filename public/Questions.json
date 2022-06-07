@@ -118,7 +118,7 @@
     },
     {
       "id": 7,
-      "title": "¿Cuál cree usted que es la situación actual de las universidades en base a la responsabilidad social? Responda en base a su criterio.",
+      "title": "¿Cuál cree usted que según la situación actual, las universidades actúan en base a la responsabilidad social? Responda en base a su criterio.",
       "type": "LIST",
       "disable": true,
       "answers": [
