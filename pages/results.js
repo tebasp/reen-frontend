@@ -1,3 +1,4 @@
+import ChartDoughnut from "@/components/ChartDoughnut";
 import ChartPolar from "@/components/ChartPolar";
 import DefaultLayout from "layouts/DefaultLayout";
 import { useState, useEffect } from "react";
@@ -5,6 +6,7 @@ import { useState, useEffect } from "react";
 export default function Results() {
   const [questions, setQuestions] = useState();
   const [data, setData] = useState({});
+  const [doughnutData, setDoughnutData] = useState({});
 
   useEffect(() => {
     async function fetchQuestions() {
@@ -28,7 +30,7 @@ export default function Results() {
       datasets: [
         {
           label: "Encuesta",
-          data: [11, 16, 7, 3, 14],
+          data: [8, 32, 12, 15, 5],
           backgroundColor: [
             "rgb(255, 99, 132)",
             "rgb(75, 192, 192)",
@@ -41,6 +43,26 @@ export default function Results() {
     };
 
     setData(data);
+  }, []);
+
+  useEffect(() => {
+    const doughnutData = {
+      labels: ["6 Si", "6 No", "7 Muy buena"],
+      datasets: [
+        {
+          label: "Encuesta Responsabilidad Social",
+          data: [16, 19, 6],
+          backgroundColor: [
+            "rgb(255, 99, 132)",
+            "rgb(54, 162, 235)",
+            "rgb(255, 205, 86)",
+          ],
+          hoverOffset: 4,
+        },
+      ],
+    };
+
+    setDoughnutData(doughnutData);
   }, []);
 
   return (
@@ -61,7 +83,15 @@ export default function Results() {
           })}
       </ul>
 
+      <h2 className="text-center text-stone-500 text-lg mt-20 mb-8">
+        Conocimiento de los encuestados sobre Responsabilidad Social
+      </h2>
       {data?.datasets ? <ChartPolar data={data} /> : ""}
+
+      <h2 className="text-center text-stone-500 text-lg mt-20 mb-8">
+        Percepción Responsabilidad Social en la Universidad
+      </h2>
+      {data?.datasets ? <ChartDoughnut data={doughnutData} /> : ""}
     </div>
   );
 }
